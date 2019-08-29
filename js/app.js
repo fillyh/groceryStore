@@ -29,28 +29,40 @@ const imageExample = document.querySelector('img[alt="cherry icon"]');
 
 console.log(imageExample);
 
-const magicButton = document.getElementById('magic');
+// const magicButton = document.getElementById('magic');
 // console.log(magicButton);
 
 // magicButton.addEventListener('click', () => {
-//     magicButton.className = 'myPoint'
+//     magicButton.className = 'myPoint';
 //     console.log(magicButton);
 // })
 
-magicButton.addEventListener('mouseover', () => {
-    magicButton.className = 'myPoint'
-    console.log(magicButton);
-})
+// magicButton.addEventListener('mouseover', () => {
+//     magicButton.className = 'myPoint'
+//     console.log(magicButton);
+// })
 
 
 // magicButton.addEventListener('mouseleave', () =>{
 //     magicButton.className = '';
 // })
 
-magicButton.addEventListener('mouseleave', () =>{
-    magicButton.classList.remove("myPoint");
+// magicButton.addEventListener('mouseleave', () =>{
+//     magicButton.classList.remove("myPoint");
+// })
+
+// document.addEventListener('keydown', () =>{
+//     console.log(event.keyCode);
+// })
+
+const myButton = document.getElementById('magic');
+
+const myBody = document.querySelector('body');
+myButton.addEventListener('mouseover', () => {
+    myButton.className = 'myPoint';
+    myButton.style.backgroundColor = '#000';
 })
 
-document.addEventListener('keydown', () =>{
-    console.log(event.keyCode);
+myButton.addEventListener('click', () => {
+    myBody.style.backgroundColor = '#056';
 })
