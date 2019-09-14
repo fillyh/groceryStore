@@ -172,6 +172,12 @@ i {
     margin-bottom: 0.5em;
 }
 
+.cart_contianer{
+    width:100%;
+    background-color:pink;
+    min-height:500px;
+}
+
 
 /* .card {
     animation: bouncing 0.5s 0s infinite alternate both; /*cubic-bezier(0.1, 0.25, 0.1, 1)
